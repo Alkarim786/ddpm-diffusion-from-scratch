@@ -1,0 +1,13 @@
+[project]
+name = "ddpm-diffusion-from-scratch"
+version = "0.1.0"
+description = "DDPM / DDIM diffusion model with classifier-free guidance, implemented from scratch in PyTorch"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 120

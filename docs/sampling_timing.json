@@ -1,0 +1,21 @@
+{
+ "n_images": 16,
+ "guidance": 2.0,
+ "threads": 4,
+ "ddpm_1000": {
+  "seconds": 252.62,
+  "ms_per_image": 15789.0
+ },
+ "ddim_50": {
+  "seconds": 11.81,
+  "ms_per_image": 738.2
+ },
+ "ddim_20": {
+  "seconds": 6.61,
+  "ms_per_image": 413.3
+ },
+ "ddim_10": {
+  "seconds": 4.32,
+  "ms_per_image": 269.9
+ }
+}

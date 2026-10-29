@@ -1,0 +1,111 @@
+{
+ "checkpoint_step": 5000,
+ "classifier": {
+  "test_accuracy": 0.983,
+  "train_seconds": 81.6
+ },
+ "fid_proxy_reference": {
+  "real_train_vs_real_test (floor)": 17.224,
+  "gaussian_noise_vs_real_test (ceiling)": 794.068
+ },
+ "guidance_sweep_ddim50": {
+  "0.0": {
+   "mean_confidence": 0.9037,
+   "class_histogram": [
+    97,
+    77,
+    102,
+    114,
+    111,
+    88,
+    90,
+    88,
+    138,
+    95
+   ],
+   "label_agreement": 0.802,
+   "fid_proxy": 25.356
+  },
+  "1.0": {
+   "mean_confidence": 0.9774,
+   "class_histogram": [
+    100,
+    93,
+    102,
+    106,
+    101,
+    96,
+    100,
+    102,
+    105,
+    95
+   ],
+   "label_agreement": 0.98,
+   "fid_proxy": 20.534
+  },
+  "2.0": {
+   "mean_confidence": 0.991,
+   "class_histogram": [
+    100,
+    98,
+    101,
+    101,
+    100,
+    100,
+    100,
+    100,
+    101,
+    99
+   ],
+   "label_agreement": 0.997,
+   "fid_proxy": 30.321
+  },
+  "4.0": {
+   "mean_confidence": 0.997,
+   "class_histogram": [
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100
+   ],
+   "label_agreement": 1.0,
+   "fid_proxy": 48.572
+  }
+ },
+ "ema_vs_raw_fid_proxy_ddim50_w2": {
+  "ema": 30.321,
+  "raw": 38.49
+ },
+ "sampler_comparison_w2": {
+  "n_samples": 128,
+  "note": "fid_proxy on n=128 samples is biased upward vs the n=1000 numbers (compare to fid_proxy_floor_at_same_n). Wall-clock timings were removed from this file: the PC went to sleep during the run and corrupted them; see sampling_timing.json for clean timings.",
+  "ddpm_1000": {
+   "fid_proxy": 96.069,
+   "mean_confidence": 0.9995573163032532,
+   "label_agreement": 1.0
+  },
+  "ddim_50": {
+   "fid_proxy": 79.176,
+   "mean_confidence": 0.9939088821411133,
+   "label_agreement": 1.0
+  },
+  "ddim_20": {
+   "fid_proxy": 76.388,
+   "mean_confidence": 0.9931048154830933,
+   "label_agreement": 1.0
+  },
+  "ddim_10": {
+   "fid_proxy": 71.003,
+   "mean_confidence": 0.9896627068519592,
+   "label_agreement": 0.9921875
+  }
+ },
+ "fid_proxy_floor_at_same_n": 46.139,
+ "ddim_eta0_deterministic": true
+}

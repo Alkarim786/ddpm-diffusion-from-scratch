@@ -1,0 +1,24 @@
+{
+ "params": 280881,
+ "steps": 5000,
+ "batch": 64,
+ "epochs_seen": 5.333333333333333,
+ "train_seconds": 50358.6,
+ "sec_per_step": 10.072,
+ "cfg": {
+  "dataset": "mnist",
+  "base": 16,
+  "mults": [
+   1,
+   2,
+   2
+  ],
+  "T": 1000,
+  "schedule": "cosine",
+  "num_res": 1
+ },
+ "lr": 0.0003,
+ "ema_decay": 0.995,
+ "seed": 0,
+ "threads": 4
+}

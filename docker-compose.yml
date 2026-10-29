@@ -1,0 +1,12 @@
+services:
+  # Train on CPU (downloads MNIST into ./data on first run)
+  train:
+    build: .
+    volumes: ["./runs:/app/runs", "./data:/app/data"]
+
+  # Generate figures + metrics from the trained checkpoint into ./docs
+  evaluate:
+    build: .
+    command: ["ddpm.evaluate", "--ckpt", "runs/mnist/ckpt.pt", "--out", "docs"]
+    volumes: ["./runs:/app/runs", "./data:/app/data", "./docs:/app/docs"]
+    profiles: ["eval"]
